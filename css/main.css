@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --orange-color: hsl(31, 77%, 52%);
+    --darkcyan-color: hsl(184, 100%, 22%);
+    --verydarkcyan-color: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*(paragraphs)*/
+    --verylight-gray: hsl(0, 0%, 95%);
+    /*(background, headings, buttons)*/
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--verylight-gray);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+    .alto {
+        height: 100vh;
+    }
+    .ancho {
+        width: 80vw;
+    }
+    .background-orange {
+        border-radius: 10px 0px 0px 10px !important;
+    }
+    .background-verydarkcyan {
+        border-radius: 0px 10px 10px 0px !important;
+    }
+}
+
+.background-orange {
+    background-color: var(--orange-color);
+    border: solid 0px transparent;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.background-darkcyan {
+    background-color: var(--darkcyan-color);
+}
+
+.background-verydarkcyan {
+    background-color: var(--verydarkcyan-color);
+    border: solid 0px transparent;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.title-font {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--verylight-gray);
+}
+
+.paragraph {
+    color: var(--transparent-white);
+    margin-bottom: 3.5rem;
+}
+
+.orangebtn {
+    color: var(--orange-color);
+    background-color: var(--verylight-gray);
+    border: solid 2px transparent;
+    border-radius: 25px;
+    padding: 9px 24px 9px 24px;
+}
+
+.cyanbtn {
+    color: var(--darkcyan-color);
+    background-color: var(--verylight-gray);
+    border: solid 2px transparent;
+    border-radius: 25px;
+    padding: 9px 24px 9px 24px;
+}
+
+.darkcyanbtn {
+    color: var(--verydarkcyan-color);
+    background-color: var(--verylight-gray);
+    border: solid 2px transparent;
+    border-radius: 25px;
+    padding: 9px 24px 9px 24px;
+}
+
+.button:hover {
+    color: var(--verylight-gray);
+    background-color: transparent;
+    border-color: var(--verylight-gray);
+    transition: 0.3s;
+}
